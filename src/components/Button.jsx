@@ -1,14 +1,14 @@
 import React from "react";
-import '../css/Testimonio.css'
+import '../css/Button.css'
 
-function Button({texto, btnaction}) {
+function Button({ text, btnaction, click }) {
     return (
         <>
-        <button className="">
-            {texto}
-        </button>
+            <button className={btnaction ? 'btn-click' : 'btn-restart'} onClick={click}>
+                {text}
+            </button>
         </>
     );
 }
 
-export default Testimonio;
+export default Button; 
